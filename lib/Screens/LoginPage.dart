@@ -25,6 +25,19 @@ class _LoginPageState extends State<LoginPage> {
           inputPassword(),
           formButton(),
           const Divider(),
+          GoogleAuthButton(
+            onPressed: () {
+              signInWithGoogle().then((value) {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ),
+                );
+              });
+            },
+            darkMode: false, // if true second example
+          ),
         ]),
       ),
     );

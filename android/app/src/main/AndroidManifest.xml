@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.csfirebaseauth">
    <application
-        android:label="csfirebaseauth"
+        android:label="NATNICHA"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
